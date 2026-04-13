@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JONR ED12 Lite – Vacuum & Mop in One</title>
+  <meta name="description" content="The JONR ED12 Lite vacuums and mops at the same time — cordless, self-cleaning in 35s, only 3.6kg. As seen on TikTok." />
+  <meta property="og:title" content="JONR ED12 Lite – Seen on TikTok" />
+  <meta property="og:description" content="One pass. Clean floors. Cordless, self-cleaning, anti-tangle. Order now." />
+  <meta property="og:image" content="https://jonrtech.com/cdn/shop/files/1_c63881c6-4738-484b-9952-9f809b859e7f_1800x1800.jpg?v=1753615789" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- STICKY HEADER -->
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="#" class="logo" aria-label="JONR ED12 Lite">
+        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" aria-hidden="true">
+          <rect width="32" height="32" rx="8" fill="var(--color-primary)"/>
+          <path d="M8 22V14c0-3.314 2.686-6 6-6h4a6 6 0 0 1 6 6v8" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+          <circle cx="16" cy="22" r="2.5" fill="white"/>
+        </svg>
+        <span class="logo-text">ED12 <em>Lite</em></span>
+      </a>
+      <nav class="header-nav" aria-label="Main navigation">
+        <a href="#features" data-i18n="nav.features">Features</a>
+        <a href="#reels" data-i18n="nav.reels">As Seen On</a>
+        <a href="#reviews" data-i18n="nav.reviews">Reviews</a>
+        <a href="#faq" data-i18n="nav.faq">FAQ</a>
+      </nav>
+      <div class="header-actions">
+        <!-- Language Picker -->
+        <div class="lang-picker" id="langPicker">
+          <button class="lang-current" aria-label="Choose language" aria-expanded="false" aria-haspopup="listbox">
+            <span class="lang-flag" id="currentFlag">🇬🇧</span>
+            <span class="lang-code" id="currentLang">EN</span>
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
+          </button>
+          <ul class="lang-dropdown" role="listbox" aria-label="Select language">
+            <li role="option" data-lang="en" data-flag="🇬🇧" class="active">🇬🇧 English</li>
+            <li role="option" data-lang="de" data-flag="🇩🇪">🇩🇪 Deutsch</li>
+            <li role="option" data-lang="fr" data-flag="🇫🇷">🇫🇷 Français</li>
+            <li role="option" data-lang="es" data-flag="🇪🇸">🇪🇸 Español</li>
+            <li role="option" data-lang="pt" data-flag="🇧🇷">🇧🇷 Português</li>
+            <li role="option" data-lang="ar" data-flag="🇸🇦">🇸🇦 العربية</li>
+            <li role="option" data-lang="zh" data-flag="🇨🇳">🇨🇳 中文</li>
+            <li role="option" data-lang="ja" data-flag="🇯🇵">🇯🇵 日本語</li>
+          </ul>
+        </div>
+        <button data-theme-toggle aria-label="Toggle dark mode">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        </button>
+        <a href="#order" class="btn btn-primary btn-sm" data-i18n="cta.buy">Order Now</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          <span data-i18n="hero.badge">Vacuum + Mop · Cordless · Self-Cleaning</span>
+        </div>
+        <h1 class="hero-heading" data-i18n="hero.headline">
+          Stop cleaning<br/>your floors<br/><em>twice.</em>
+        </h1>
+        <p class="hero-sub" data-i18n="hero.sub">The JONR ED12 Lite vacuums and mops in one single pass — then cleans itself in 35 seconds. No cords. No tangles. No drama.</p>
+        <div class="hero-ctas">
+          <a href="#order" class="btn btn-primary btn-lg btn-pulse" data-i18n="cta.buy">Order Now</a>
+          <a href="#reels" class="btn btn-ghost btn-lg" data-i18n="cta.watch">Watch it in action ↓</a>
+        </div>
+        <div class="hero-proof">
+          <div class="stars">★★★★★</div>
+          <span data-i18n="hero.proof">Trusted by 1,000+ customers worldwide</span>
+        </div>
+      </div>
+      <div class="hero-visual">
+        <div class="hero-img-wrap">
+          <img
+            src="https://jonrtech.com/cdn/shop/files/1_c63881c6-4738-484b-9952-9f809b859e7f_1800x1800.jpg?v=1753615789"
+            alt="JONR ED12 Lite cordless wet dry vacuum cleaner"
+            class="hero-img"
+            loading="eager"
+          />
+          <div class="hero-float-card card-left">
+            <span class="float-icon">⚡</span>
+            <div>
+              <strong>7,000 Pa</strong>
+              <span data-i18n="hero.card1">Suction Power</span>
+            </div>
+          </div>
+          <div class="hero-float-card card-right">
+            <span class="float-icon">✓</span>
+            <div>
+              <strong>35 sec.</strong>
+              <span data-i18n="hero.card2">Self-Cleaning</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROOF STRIP -->
+    <section class="proof-strip">
+      <div class="proof-inner">
+        <div class="proof-item"><strong>7,000 Pa</strong><span data-i18n="proof.suction">Suction</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><strong>2-in-1</strong><span data-i18n="proof.combo">Vacuum + Mop</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><strong>30 min</strong><span data-i18n="proof.battery">Battery Life</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><strong>850 ml</strong><span data-i18n="proof.tank">Clean Water Tank</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><strong>3.6 kg</strong><span data-i18n="proof.weight">Ultra-Light</span></div>
+        <div class="proof-divider"></div>
+        <div class="proof-item"><strong data-i18n="proof.cordless">Cordless</strong><span data-i18n="proof.freedom">Total Freedom</span></div>
+      </div>
+    </section>
+
+    <!-- AS SEEN ON TIKTOK — REELS -->
+    <section class="reels-section" id="reels">
+      <div class="container">
+        <div class="section-header">
+          <div class="tiktok-badge-wrap">
+            <span class="tiktok-badge">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.16 8.16 0 0 0 4.77 1.52V6.76a4.85 4.85 0 0 1-1-.07z"/></svg>
+              As Seen On TikTok
+            </span>
+          </div>
+          <h2 data-i18n="reels.headline">Real people. Real floors. Real results.</h2>
+          <p data-i18n="reels.sub">Watch these viral clips that blew up on TikTok & YouTube — then decide for yourself.</p>
+        </div>
+
+        <!-- TIKTOK REELS ROW -->
+        <div class="reels-grid">
+
+          <!-- TikTok: @candacebyrddavis -->
+          <div class="reel-card">
+            <div class="reel-embed-wrap">
+              <blockquote
+                class="tiktok-embed"
+                cite="https://www.tiktok.com/@candacebyrddavis/video/7534055352673848589"
+                data-video-id="7534055352673848589"
+                data-embed-from="oembed"
+                style="max-width:605px;min-width:325px;">
+                <section>
+                  <a target="_blank" title="@candacebyrddavis" href="https://www.tiktok.com/@candacebyrddavis?refer=embed">@candacebyrddavis</a>
+                  <a title="jonred12" target="_blank" href="https://www.tiktok.com/tag/jonred12?refer=embed">#jonred12</a>
+                </section>
+              </blockquote>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-platform tiktok-color">TikTok</span>
+              <p data-i18n="reel1.quote">"Discover the ultimate cleaning hack! This thing is a total game changer."</p>
+              <div class="reel-likes">❤️ 934 Likes</div>
+            </div>
+          </div>
+
+          <!-- TikTok: @lbscakes_ -->
+          <div class="reel-card">
+            <div class="reel-embed-wrap">
+              <blockquote
+                class="tiktok-embed"
+                cite="https://www.tiktok.com/@lbscakes_/video/7573531033807768887"
+                data-video-id="7573531033807768887"
+                data-embed-from="oembed"
+                style="max-width:605px;min-width:325px;">
+                <section>
+                  <a target="_blank" title="@lbscakes_" href="https://www.tiktok.com/@lbscakes_?refer=embed">@lbscakes_</a>
+                  <a title="jonrvacuum" target="_blank" href="https://www.tiktok.com/tag/jonrvacuum?refer=embed">#jonrvacuum</a>
+                </section>
+              </blockquote>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-platform tiktok-color">TikTok</span>
+              <p data-i18n="reel2.quote">"JONR ED12 Cordless Wet Dry Vac is a must grab this season. I'm obsessed."</p>
+              <div class="reel-likes">❤️ Viral</div>
+            </div>
+          </div>
+
+          <!-- TikTok: @jonrtech official -->
+          <div class="reel-card">
+            <div class="reel-embed-wrap">
+              <blockquote
+                class="tiktok-embed"
+                cite="https://www.tiktok.com/@jonrtech/video/7398580439721577771"
+                data-video-id="7398580439721577771"
+                data-embed-from="oembed"
+                style="max-width:605px;min-width:325px;">
+                <section>
+                  <a target="_blank" title="@jonrtech" href="https://www.tiktok.com/@jonrtech?refer=embed">@jonrtech</a>
+                  <a title="jonred12" target="_blank" href="https://www.tiktok.com/tag/jonred12?refer=embed">#jonred12</a>
+                </section>
+              </blockquote>
+            </div>
+            <div class="reel-meta">
+              <span class="reel-platform tiktok-color">TikTok</span>
+              <p data-i18n="reel3.quote">"My floors have never been this clean. #jonr #jonred12 #fyp"</p>
+              <div class="reel-likes">❤️ FYP</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- YOUTUBE SHORTS ROW -->
+        <div class="shorts-label">
+          <span data-i18n="reels.youtube">Also on YouTube</span>
+        </div>
+        <div class="shorts-grid">
+
+          <a href="https://www.youtube.com/watch?v=-rMMJ2xhkiw" target="_blank" rel="noopener" class="short-card" aria-label="YouTube: ED12 Lite Feature-Rich Budget Review">
+            <div class="short-thumb">
+              <img src="https://img.youtube.com/vi/-rMMJ2xhkiw/hqdefault.jpg" alt="ED12 Lite Budget Review YouTube" loading="lazy"/>
+              <div class="yt-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="yt-badge">YouTube</div>
+            </div>
+            <p data-i18n="short1.quote">"Fantastic value for money at this price point — I'm genuinely impressed."</p>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=ujOH4lM784Y" target="_blank" rel="noopener" class="short-card" aria-label="YouTube: POV ED12 Review">
+            <div class="short-thumb">
+              <img src="https://img.youtube.com/vi/ujOH4lM784Y/hqdefault.jpg" alt="POV JONR ED12 review" loading="lazy"/>
+              <div class="yt-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="yt-badge">YouTube</div>
+            </div>
+            <p data-i18n="short2.quote">"Cut our cleaning from 3 steps down to 1. With 3 young kids — this changed everything."</p>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=TZTgoB_VUsU" target="_blank" rel="noopener" class="short-card" aria-label="YouTube: ED12 Lite Hands-On">
+            <div class="short-thumb">
+              <img src="https://img.youtube.com/vi/TZTgoB_VUsU/hqdefault.jpg" alt="JONR ED12 Lite hands-on" loading="lazy"/>
+              <div class="yt-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="yt-badge">YouTube</div>
+            </div>
+            <p data-i18n="short3.quote">"7,000 Pa suction, edge cleaning, self-cleaning. Under 3.5 kg. For that price? Unreal."</p>
+          </a>
+
+          <a href="https://www.youtube.com/watch?v=nFGk9XsUlVE" target="_blank" rel="noopener" class="short-card" aria-label="YouTube: JONR ED12 Should You Buy?">
+            <div class="short-thumb">
+              <img src="https://img.youtube.com/vi/nFGk9XsUlVE/hqdefault.jpg" alt="JONR ED12 should you buy" loading="lazy"/>
+              <div class="yt-play" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="white" width="28" height="28"><path d="M8 5v14l11-7z"/></svg>
+              </div>
+              <div class="yt-badge">YouTube</div>
+            </div>
+            <p data-i18n="short4.quote">"Very strong suction — even on carpet. Battery lasts 35 min on low. Super easy to use."</p>
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- PROBLEM / SOLUTION -->
+    <section class="problem-section">
+      <div class="container">
+        <div class="problem-grid">
+          <div class="problem-text">
+            <span class="eyebrow" data-i18n="problem.eyebrow">Sound familiar?</span>
+            <h2 data-i18n="problem.headline">Sweep. Then vacuum. Then mop. Then repeat.</h2>
+            <p data-i18n="problem.body">Three tools, double the time, and a mop that smells like the last job. There's a smarter way.</p>
+            <ul class="problem-list" role="list">
+              <li><span class="x-icon">✕</span><span data-i18n="problem.p1">Cord always in the way</span></li>
+              <li><span class="x-icon">✕</span><span data-i18n="problem.p2">Dirty mop water spreads bacteria</span></li>
+              <li><span class="x-icon">✕</span><span data-i18n="problem.p3">Pet hair wraps around every brush</span></li>
+              <li><span class="x-icon">✕</span><span data-i18n="problem.p4">Corners never truly clean</span></li>
+            </ul>
+          </div>
+          <div class="problem-visual">
+            <div class="solution-card">
+              <div class="solution-badge" data-i18n="problem.solution">The Fix</div>
+              <img src="https://i5.walmartimages.com/asr/fb506d54-0f43-4107-b026-872f861a6907.76f20bdb93cd157a3989ebab44ec9027.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF" alt="JONR ED12 Lite cleaning floor" loading="lazy"/>
+              <p class="solution-caption" data-i18n="problem.caption">One device. One pass. Done.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="features-section" id="features">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="features.eyebrow">What makes it different</span>
+          <h2 data-i18n="features.headline">Six reasons the ED12 Lite wins</h2>
+        </div>
+        <div class="features-grid">
+
+          <div class="feature-card feature-large">
+            <div class="feature-icon-wrap">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 data-i18n="feat1.title">Vacuum + Mop. One pass.</h3>
+            <p data-i18n="feat1.body">40 precision water jets distribute clean water evenly across the roller as 7,000 Pa suction lifts dry debris — simultaneously. You'll never go back to two steps.</p>
+            <div class="feature-stat"><strong data-i18n="feat1.stat1">40 jets</strong><span data-i18n="feat1.stat2">for streak-free coverage</span></div>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+            </div>
+            <h3 data-i18n="feat2.title">Self-Cleans in 35 Seconds</h3>
+            <p data-i18n="feat2.body">One button press. The roller and pipes flush themselves automatically. No hands, no mess, no smell next time you open it.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 data-i18n="feat3.title">Only 3.6 kg — Self-Propelled</h3>
+            <p data-i18n="feat3.body">Lighter than a bag of groceries. The rotating brush generates forward momentum — it practically glides on its own. Perfect for larger apartments or older users.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 data-i18n="feat4.title">6mm Edge Cleaning</h3>
+            <p data-i18n="feat4.body">The roller reaches within 6mm of walls and baseboards. Those dusty strips other vacuums always miss? Gone. In tests, it outperformed models 3× the price.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon-wrap">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <h3 data-i18n="feat5.title">Zero Hair Tangles</h3>
+            <p data-i18n="feat5.body">Dual comb scrapers slice hair before it can wrap. In independent testing: after a full session with long hair strands, zero hair found on the roller. Pet owners love this.</p>
+          </div>
+
+          <div class="feature-card feature-large feature-dark">
+            <div class="feature-icon-wrap feature-icon-light">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+            </div>
+            <h3 data-i18n="feat6.title">Dual Tank: Clean Stays Clean</h3>
+            <p data-i18n="feat6.body">850 ml fresh water tank + 450 ml dirty water tank. Clean and dirty water never mix — so you're always mopping with fresh water, not recycled grime.</p>
+            <div class="feature-stat feature-stat-light"><strong data-i18n="feat6.stat1">100 m²</strong><span data-i18n="feat6.stat2">without refilling</span></div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="howto-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="howto.eyebrow">How it works</span>
+          <h2 data-i18n="howto.headline">Three steps to spotless floors</h2>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-num">01</div>
+            <h3 data-i18n="step1.title">Fill the Tank</h3>
+            <p data-i18n="step1.body">Pop open the clean water tank, fill with up to 850 ml of water. Add a cleaning tablet if you like. Snap shut. Done.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-num">02</div>
+            <h3 data-i18n="step2.title">Switch On & Go</h3>
+            <p data-i18n="step2.body">Press power, choose Normal or Max mode, and glide across your floors. One pass — vacuumed and mopped.</p>
+          </div>
+          <div class="step-arrow">→</div>
+          <div class="step-card">
+            <div class="step-num">03</div>
+            <h3 data-i18n="step3.title">Self-Clean & Dock</h3>
+            <p data-i18n="step3.body">Hold the self-clean button for 35 seconds. Roller and pipes flush themselves. Place on the charging base. Ready for next time.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SPECS -->
+    <section class="specs-section">
+      <div class="container">
+        <div class="specs-layout">
+          <div class="specs-text">
+            <span class="eyebrow" data-i18n="specs.eyebrow">Tech Specs</span>
+            <h2 data-i18n="specs.headline">The numbers that matter</h2>
+            <p data-i18n="specs.body">No marketing fluff — just what you actually want to know before buying.</p>
+          </div>
+          <div class="specs-table-wrap">
+            <table class="specs-table" aria-label="JONR ED12 Lite Technical Specifications">
+              <tbody>
+                <tr><th scope="row" data-i18n="spec.model">Model</th><td>JONR ED12 Lite</td></tr>
+                <tr><th scope="row" data-i18n="spec.suction">Suction Power</th><td>≥ 7,000 Pa</td></tr>
+                <tr><th scope="row" data-i18n="spec.power">Motor Power</th><td>200 W</td></tr>
+                <tr><th scope="row" data-i18n="spec.cleantank">Clean Water Tank</th><td>750–850 ml</td></tr>
+                <tr><th scope="row" data-i18n="spec.dirtytank">Dirty Water Tank</th><td>450 ml</td></tr>
+                <tr><th scope="row" data-i18n="spec.weight">Weight</th><td>3.6 kg (net)</td></tr>
+                <tr><th scope="row" data-i18n="spec.runtime">Battery Runtime</th><td>25–30 minutes</td></tr>
+                <tr><th scope="row" data-i18n="spec.selfclean">Self-Cleaning Cycle</th><td>35 seconds</td></tr>
+                <tr><th scope="row" data-i18n="spec.noise">Noise Level</th><td>≤ 76 dBA</td></tr>
+                <tr><th scope="row" data-i18n="spec.modes">Cleaning Modes</th><td data-i18n="spec.modes.val">Normal + Max</td></tr>
+                <tr><th scope="row" data-i18n="spec.edge">Edge Cleaning</th><td>6 mm clearance</td></tr>
+                <tr><th scope="row" data-i18n="spec.size">Dimensions</th><td>215 × 270 × 1115 mm</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- REVIEWS -->
+    <section class="reviews-section" id="reviews">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="reviews.eyebrow">Real buyers. Honest words.</span>
+          <h2 data-i18n="reviews.headline">What customers say</h2>
+          <div class="overall-rating">
+            <span class="big-stars">★★★★★</span>
+            <span data-i18n="reviews.rating">4.7 / 5 · 1,000+ reviews</span>
+          </div>
+        </div>
+        <div class="reviews-grid">
+          <div class="review-card review-featured">
+            <div class="review-stars">★★★★★</div>
+            <blockquote data-i18n="rev1">"I absolutely love this vacuum mop! No more being tethered to a wall outlet. The self-cleaning feature is FANTASTIC! Battery life is great. Super lightweight and self-propelled. Very functional for a mom with two messy kids!"</blockquote>
+            <cite data-i18n="rev1.cite">— Verified Purchase · USA</cite>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote data-i18n="rev2">"The best option I could have bought. One-step automatic cleaning, quiet, easy to use, dual-tank design. It vacuums and cleans at the same time. Compact enough for any corner."</blockquote>
+            <cite data-i18n="rev2.cite">— Verified Purchase</cite>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote data-i18n="rev3">"Great for homes with pets and kids. I love how easy it is to clean! The self-cleaning feature is a lifesaver — no more pet hair in the brush!"</blockquote>
+            <cite data-i18n="rev3.cite">— Eldis F. · Verified Purchase</cite>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote data-i18n="rev4">"It does a great job on hardwood floors for both wet and dry messes. So happy that I bought this! Wasn't sure how well 2-in-1 would work but I'm very pleased."</blockquote>
+            <cite data-i18n="rev4.cite">— Verified Purchase · USA</cite>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote data-i18n="rev5">"DONT waste your time looking further. This is by far the best wet vacuum I've bought. The JONR S20 redeemed all my past disappointments with other brands."</blockquote>
+            <cite data-i18n="rev5.cite">— Verified Purchase · TikTok Shop</cite>
+          </div>
+          <div class="review-card">
+            <div class="review-stars">★★★★★</div>
+            <blockquote data-i18n="rev6">"It makes cleaning fun. Comes with charging base, two mop rollers, two filters, a hair tool, and cleaning solution. Worth every penny."</blockquote>
+            <cite data-i18n="rev6.cite">— Verified Purchase · Facebook</cite>
+          </div>
+        </div>
+
+        <!-- Expert Scores -->
+        <div class="expert-scores">
+          <div class="expert-header">
+            <span class="eyebrow" data-i18n="expert.eyebrow">Expert Test Score</span>
+            <p data-i18n="expert.sub">Independent review · 15 years of home tech testing</p>
+          </div>
+          <div class="scores-grid">
+            <div class="score-item">
+              <div class="score-bar-wrap"><div class="score-bar" style="--score:90%"></div></div>
+              <span class="score-label" data-i18n="score.suction">Suction Power</span><span class="score-val">9/10</span>
+            </div>
+            <div class="score-item">
+              <div class="score-bar-wrap"><div class="score-bar" style="--score:90%"></div></div>
+              <span class="score-label" data-i18n="score.ease">Ease of Use</span><span class="score-val">9/10</span>
+            </div>
+            <div class="score-item">
+              <div class="score-bar-wrap"><div class="score-bar" style="--score:80%"></div></div>
+              <span class="score-label" data-i18n="score.edge">Edge Cleaning</span><span class="score-val">8/10</span>
+            </div>
+            <div class="score-item">
+              <div class="score-bar-wrap"><div class="score-bar" style="--score:80%"></div></div>
+              <span class="score-label" data-i18n="score.maint">Maintenance</span><span class="score-val">8/10</span>
+            </div>
+            <div class="score-item">
+              <div class="score-bar-wrap"><div class="score-bar" style="--score:80%"></div></div>
+              <span class="score-label" data-i18n="score.value">Value for Money</span><span class="score-val">8/10</span>
+            </div>
+            <div class="score-item">
+              <div class="score-bar-wrap"><div class="score-bar" style="--score:70%"></div></div>
+              <span class="score-label" data-i18n="score.battery">Battery Life</span><span class="score-val">7/10</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- COMPARISON -->
+    <section class="compare-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="compare.eyebrow">Side by Side</span>
+          <h2 data-i18n="compare.headline">ED12 Lite vs. The Competition</h2>
+        </div>
+        <div class="compare-table-wrap">
+          <table class="compare-table" aria-label="Product comparison">
+            <thead>
+              <tr>
+                <th scope="col" data-i18n="compare.feature">Feature</th>
+                <th scope="col" class="col-highlight">JONR ED12 Lite</th>
+                <th scope="col">Tineco Floor One S7</th>
+                <th scope="col">Dyson V15</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td data-i18n="compare.selfclean">Self-Cleaning</td>
+                <td class="col-highlight check">✓ 35 sec.</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+              <tr>
+                <td data-i18n="compare.edge">Edge Cleaning</td>
+                <td class="col-highlight check">✓ 6 mm</td>
+                <td class="check">✓</td>
+                <td>8 mm</td>
+              </tr>
+              <tr>
+                <td data-i18n="compare.weight">Weight</td>
+                <td class="col-highlight check">3.6 kg</td>
+                <td>3.1 kg</td>
+                <td>3.1 kg</td>
+              </tr>
+              <tr>
+                <td data-i18n="compare.battery">Battery</td>
+                <td class="col-highlight">25–30 min</td>
+                <td>50 min</td>
+                <td>60 min</td>
+              </tr>
+              <tr>
+                <td data-i18n="compare.price">Price Range</td>
+                <td class="col-highlight check">💰 Budget</td>
+                <td>💰💰 Mid-range</td>
+                <td>💰💰💰 Premium</td>
+              </tr>
+              <tr>
+                <td data-i18n="compare.tangle">Anti-Tangle</td>
+                <td class="col-highlight check">✓</td>
+                <td class="check">✓</td>
+                <td class="check">✓</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-section" id="faq">
+      <div class="container">
+        <div class="section-header">
+          <span class="eyebrow" data-i18n="faq.eyebrow">Got Questions?</span>
+          <h2 data-i18n="faq.headline">We've got answers</h2>
+        </div>
+        <div class="faq-list">
+          <details class="faq-item">
+            <summary data-i18n="faq.q1">Does it work on carpet?</summary>
+            <p data-i18n="faq.a1">No — the ED12 Lite is built for hard floors: tile, hardwood, laminate, and vinyl (LVP). It's not designed for carpet use.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q2">How long does the battery actually last?</summary>
+            <p data-i18n="faq.a2">About 30 minutes in Normal mode, 25 in Max mode. That's enough for 2–3 rooms or up to 100 m². Then dock and charge.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q3">Will pet hair wrap around the brush?</summary>
+            <p data-i18n="faq.a3">No. The dual comb scrapers actively cut hair before it can tangle. In independent tests: zero hair stuck on the roller after a full session.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q4">How loud is it?</summary>
+            <p data-i18n="faq.a4">Maximum 76 dBA — quieter than most traditional vacuums. Roughly the same as a normal conversation.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q5">What comes in the box?</summary>
+            <p data-i18n="faq.a5">The ED12 Lite unit, charging base, 2× mop rollers, 2× filters, hair cleaning tool, and a bottle of cleaning solution.</p>
+          </details>
+          <details class="faq-item">
+            <summary data-i18n="faq.q6">Can I use regular tap water?</summary>
+            <p data-i18n="faq.a6">Yes, tap water works perfectly. You can also add a cleaning tablet for a fresher scent — totally optional.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ORDER CTA -->
+    <section class="order-section" id="order">
+      <div class="container">
+        <div class="order-card">
+          <div class="order-content">
+            <div class="order-badge-wrap"><span class="order-badge" data-i18n="order.badge">Limited Stock</span></div>
+            <h2 data-i18n="order.title">JONR ED12 Lite</h2>
+            <p class="order-sub" data-i18n="order.sub">2-in-1 Wet & Dry Vacuum · Cordless · Self-Cleaning</p>
+            <div class="order-pricing">
+              <span class="price-was" data-i18n="price.was">$249.00</span>
+              <span class="price-now" data-i18n="price.now">$149.00</span>
+              <span class="price-badge" data-i18n="price.save">Save 40%</span>
+            </div>
+            <div class="order-includes">
+              <p class="includes-title" data-i18n="order.includes">In the box:</p>
+              <ul role="list">
+                <li>✓ <span data-i18n="box.unit">ED12 Lite Unit</span></li>
+                <li>✓ <span data-i18n="box.base">Charging Base</span></li>
+                <li>✓ <span data-i18n="box.rollers">2× Mop Rollers</span></li>
+                <li>✓ <span data-i18n="box.filters">2× Filters</span></li>
+                <li>✓ <span data-i18n="box.tool">Hair Cleaning Tool</span></li>
+                <li>✓ <span data-i18n="box.solution">Cleaning Solution</span></li>
+              </ul>
+            </div>
+            <div class="order-trust">
+              <span data-i18n="trust.secure">🔒 Secure Checkout</span>
+              <span data-i18n="trust.shipping">📦 Fast Worldwide Shipping</span>
+              <span data-i18n="trust.returns">↩ 30-Day Returns</span>
+            </div>
+            <!-- TODO: Replace YOUR_CHECKOUT_URL with your Shopify/Gumroad/WooCommerce checkout link -->
+            <a href="https://www.2court.io/products/jonr-ed12-lite-wet-amp-dry-vacuum" target="_blank" rel="noopener" class="btn btn-primary btn-xl btn-pulse" data-i18n="cta.buy">
+              Order Now →
+            </a>
+            <div class="order-green-trust">
+              <span class="order-green-check">✓</span>
+              <span data-i18n="order.trust">Secure checkout &nbsp;·&nbsp; 30-day money-back &nbsp;·&nbsp; Free shipping</span>
+            </div>
+            <p class="order-note" data-i18n="order.note">You'll be taken to the secure product page.</p>
+          </div>
+          <div class="order-visual">
+            <img src="https://jonrtech.com/cdn/shop/files/ed12-size.jpg?v=1770200410&width=1000" alt="JONR ED12 Lite product" loading="lazy"/>
+            <div class="order-stars">
+              <span>★★★★★</span>
+              <span data-i18n="reviews.rating">4.7 / 5 · 1,000+ reviews</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <p data-i18n="footer.copy">© 2026 ED12 Lite Store. Product descriptions are based on manufacturer data and independent testing.</p>
+      <div class="footer-links">
+        <a href="#" data-i18n="footer.privacy">Privacy</a>
+        <a href="#" data-i18n="footer.imprint">Imprint</a>
+        <a href="#" data-i18n="footer.contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- EMAIL POPUP -->
+  <div class="popup-overlay" id="emailPopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="popup-card">
+      <button class="popup-close" id="popupClose" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+      <div class="popup-badge" data-i18n="popup.badge">Limited Offer</div>
+      <div class="popup-discount">30%</div>
+      <div class="popup-discount-label" data-i18n="popup.discountLabel">OFF your order</div>
+      <h2 class="popup-title" id="popupTitle" data-i18n="popup.title">Get 30% Off Today</h2>
+      <p class="popup-sub" data-i18n="popup.sub">Enter your email and we'll send your exclusive discount code instantly.</p>
+      <form class="popup-form" id="popupForm">
+        <input
+          type="email"
+          class="popup-input"
+          id="popupEmail"
+          data-i18n-placeholder="popup.placeholder"
+          placeholder="Your email address"
+          required
+          autocomplete="email"
+        />
+        <button type="submit" class="btn btn-primary popup-submit" data-i18n="popup.cta">Get My 30% Off</button>
+      </form>
+      <div class="popup-success" id="popupSuccess" hidden>
+        <div class="popup-code-wrap">
+          <span data-i18n="popup.codeLabel">Your code:</span>
+          <span class="popup-code" id="popupCode">SAVE30</span>
+          <button class="popup-copy" id="popupCopy" aria-label="Copy code">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
+          </button>
+        </div>
+        <p class="popup-success-msg" data-i18n="popup.successMsg">Code copied! Paste it at checkout for 30% off.</p>
+        <a href="https://www.2court.io/products/jonr-ed12-lite-wet-amp-dry-vacuum" class="btn btn-primary popup-shop" data-i18n="popup.shopNow">Shop Now →</a>
+      </div>
+      <p class="popup-privacy" data-i18n="popup.privacy">No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+  <script async src="https://www.tiktok.com/embed.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
