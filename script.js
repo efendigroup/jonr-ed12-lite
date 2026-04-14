@@ -925,3 +925,65 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     });
   });
 })();
+
+/* =============================================
+   WAITLIST FORM HANDLER
+   ============================================= */
+(function() {
+  const waitlistForm = document.getElementById('waitlistForm');
+  const waitlistSuccess = document.getElementById('waitlistSuccess');
+  if (waitlistForm) {
+    waitlistForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = waitlistForm.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      try {
+        const resp = await fetch(waitlistForm.action, {
+          method: 'POST',
+          body: new FormData(waitlistForm),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (resp.ok) {
+          waitlistForm.hidden = true;
+          if (waitlistSuccess) waitlistSuccess.hidden = false;
+        } else {
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Try again';
+        btn.disabled = false;
+      }
+    });
+  }
+
+  // Also update popup form to use fetch (waitlist mode)
+  const popupForm = document.getElementById('popupForm');
+  const popupSuccess = document.getElementById('popupSuccess');
+  if (popupForm) {
+    popupForm.addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const btn = popupForm.querySelector('button[type="submit"]');
+      btn.textContent = 'Sending...';
+      btn.disabled = true;
+      try {
+        const resp = await fetch(popupForm.action, {
+          method: 'POST',
+          body: new FormData(popupForm),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (resp.ok) {
+          popupForm.hidden = true;
+          if (popupSuccess) popupSuccess.hidden = false;
+        } else {
+          btn.textContent = 'Try again';
+          btn.disabled = false;
+        }
+      } catch {
+        btn.textContent = 'Try again';
+        btn.disabled = false;
+      }
+    });
+  }
+})();

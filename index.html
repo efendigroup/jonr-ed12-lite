@@ -16,6 +16,12 @@
 <body>
 
   <!-- STICKY HEADER -->
+  <!-- SOLD OUT BANNER -->
+  <div class="soldout-banner" id="soldoutBanner">
+    <span>🔥 <strong>Sold Out</strong> — High demand! Register now to be first when we restock.</span>
+    <a href="#waitlist" class="soldout-cta">Join Waitlist →</a>
+  </div>
+
   <header class="header" id="header">
     <div class="header-inner">
       <a href="#" class="logo" aria-label="JONR ED12 Lite">
@@ -54,7 +60,7 @@
         <button data-theme-toggle aria-label="Toggle dark mode">
           <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
         </button>
-        <a href="#order" class="btn btn-primary btn-sm" data-i18n="cta.buy">Order Now</a>
+        <a href="#waitlist" class="btn btn-primary btn-sm">Join Waitlist</a>
       </div>
     </div>
   </header>
@@ -73,7 +79,7 @@
         </h1>
         <p class="hero-sub" data-i18n="hero.sub">The JONR ED12 Lite vacuums and mops in one single pass — then cleans itself in 35 seconds. No cords. No tangles. No drama.</p>
         <div class="hero-ctas">
-          <a href="#order" class="btn btn-primary btn-lg btn-pulse" data-i18n="cta.buy">Order Now</a>
+          <a href="#waitlist" class="btn btn-primary btn-lg btn-pulse">Join Waitlist 🔔</a>
           <a href="#reels" class="btn btn-ghost btn-lg" data-i18n="cta.watch">Watch it in action ↓</a>
         </div>
         <div class="hero-proof">
@@ -702,15 +708,21 @@
               <span data-i18n="trust.shipping">📦 Fast Worldwide Shipping</span>
               <span data-i18n="trust.returns">↩ 30-Day Returns</span>
             </div>
-            <!-- TODO: Replace YOUR_CHECKOUT_URL with your Shopify/Gumroad/WooCommerce checkout link -->
-            <a href="https://www.2court.io/products/jonr-ed12-lite-wet-amp-dry-vacuum" target="_blank" rel="noopener" class="btn btn-primary btn-xl btn-pulse" data-i18n="cta.buy">
-              Order Now →
-            </a>
+            <!-- WAITLIST FORM -->
+            <div class="waitlist-soldout-badge">⚡ Currently Sold Out</div>
+            <p class="waitlist-note">We're restocking soon. Enter your email to get early access + an exclusive discount.</p>
+            <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/xpwzgkjq" method="POST">
+              <input type="email" name="email" class="waitlist-input" placeholder="Your email address" required autocomplete="email" />
+              <input type="hidden" name="source" value="ed12.de waitlist" />
+              <button type="submit" class="btn btn-primary btn-xl btn-pulse">Notify Me First 🔔</button>
+            </form>
+            <div class="waitlist-success" id="waitlistSuccess" hidden>
+              <span class="order-green-check">✓</span> You're on the list! We'll email you the moment we restock.
+            </div>
             <div class="order-green-trust">
               <span class="order-green-check">✓</span>
-              <span data-i18n="order.trust">Secure checkout &nbsp;·&nbsp; 30-day money-back &nbsp;·&nbsp; Free shipping</span>
+              <span>No spam &nbsp;·&nbsp; Early access discount &nbsp;·&nbsp; Free shipping at launch</span>
             </div>
-            <p class="order-note" data-i18n="order.note">You'll be taken to the secure product page.</p>
           </div>
           <div class="order-visual">
             <img src="https://jonrtech.com/cdn/shop/files/ed12-size.jpg?v=1770200410&width=1000" alt="JONR ED12 Lite product" loading="lazy"/>
@@ -736,41 +748,26 @@
     </div>
   </footer>
 
-  <!-- EMAIL POPUP -->
+  <!-- EMAIL POPUP — WAITLIST MODE -->
   <div class="popup-overlay" id="emailPopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
     <div class="popup-card">
       <button class="popup-close" id="popupClose" aria-label="Close">
         <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
       </button>
-      <div class="popup-badge" data-i18n="popup.badge">Limited Offer</div>
-      <div class="popup-discount">30%</div>
-      <div class="popup-discount-label" data-i18n="popup.discountLabel">OFF your order</div>
-      <h2 class="popup-title" id="popupTitle" data-i18n="popup.title">Get 30% Off Today</h2>
-      <p class="popup-sub" data-i18n="popup.sub">Enter your email and we'll send your exclusive discount code instantly.</p>
-      <form class="popup-form" id="popupForm">
-        <input
-          type="email"
-          class="popup-input"
-          id="popupEmail"
-          data-i18n-placeholder="popup.placeholder"
-          placeholder="Your email address"
-          required
-          autocomplete="email"
-        />
-        <button type="submit" class="btn btn-primary popup-submit" data-i18n="popup.cta">Get My 30% Off</button>
+      <div class="popup-badge">🔥 Sold Out</div>
+      <div class="popup-discount">🔔</div>
+      <div class="popup-discount-label">Early Access</div>
+      <h2 class="popup-title" id="popupTitle">Be First to Know</h2>
+      <p class="popup-sub">The ED12 Lite is flying off shelves. Join the waitlist and get an exclusive restock discount.</p>
+      <form class="popup-form" id="popupForm" action="https://formspree.io/f/xpwzgkjq" method="POST">
+        <input type="email" name="email" class="popup-input" id="popupEmail" placeholder="Your email address" required autocomplete="email" />
+        <input type="hidden" name="source" value="ed12.de popup" />
+        <button type="submit" class="btn btn-primary popup-submit">Notify Me First 🔔</button>
       </form>
       <div class="popup-success" id="popupSuccess" hidden>
-        <div class="popup-code-wrap">
-          <span data-i18n="popup.codeLabel">Your code:</span>
-          <span class="popup-code" id="popupCode">SAVE30</span>
-          <button class="popup-copy" id="popupCopy" aria-label="Copy code">
-            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="9" width="13" height="13" rx="2"/><path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/></svg>
-          </button>
-        </div>
-        <p class="popup-success-msg" data-i18n="popup.successMsg">Code copied! Paste it at checkout for 30% off.</p>
-        <a href="https://www.2court.io/products/jonr-ed12-lite-wet-amp-dry-vacuum" class="btn btn-primary popup-shop" data-i18n="popup.shopNow">Shop Now →</a>
+        <p class="popup-success-msg">✓ You're on the list! We'll email you the moment we restock with an exclusive discount.</p>
       </div>
-      <p class="popup-privacy" data-i18n="popup.privacy">No spam. Unsubscribe anytime.</p>
+      <p class="popup-privacy">No spam. Unsubscribe anytime.</p>
     </div>
   </div>
 
