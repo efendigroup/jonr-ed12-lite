@@ -632,3 +632,21 @@ body { padding-top: 42px; }
   .soldout-banner { font-size: 0.78rem; gap: 8px; padding: 8px 12px; }
   .soldout-cta { display: none; }
 }
+
+/* iFrame Waitlist Wrapper */
+.waitlist-iframe-wrap,
+.popup-iframe-wrap {
+  width: 100%;
+  border-radius: 12px;
+  overflow: hidden;
+  background: transparent;
+}
+
+.waitlist-iframe-wrap iframe,
+.popup-iframe-wrap iframe {
+  display: block;
+  width: 100%;
+  min-height: 200px;
+  border: none;
+  background: transparent;
+}

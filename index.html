@@ -711,13 +711,17 @@
             <!-- WAITLIST FORM -->
             <div class="waitlist-soldout-badge">⚡ Currently Sold Out</div>
             <p class="waitlist-note">We're restocking soon. Enter your email to get early access + an exclusive discount.</p>
-            <form class="waitlist-form" id="waitlistForm" action="https://formspree.io/f/xpwzgkjq" method="POST">
-              <input type="email" name="email" class="waitlist-input" placeholder="Your email address" required autocomplete="email" />
-              <input type="hidden" name="source" value="ed12.de waitlist" />
-              <button type="submit" class="btn btn-primary btn-xl btn-pulse">Notify Me First 🔔</button>
-            </form>
-            <div class="waitlist-success" id="waitlistSuccess" hidden>
-              <span class="order-green-check">✓</span> You're on the list! We'll email you the moment we restock.
+            <div class="waitlist-iframe-wrap" id="waitlist">
+              <iframe
+                src="https://docs.google.com/forms/d/e/1FAIpQLScGGKN4mF8XfrtnUpD6KqZH8kUcKTcURlCUhvqHAAdF93fkpA/viewform?embedded=true"
+                width="100%"
+                height="220"
+                frameborder="0"
+                marginheight="0"
+                marginwidth="0"
+                style="border:none;background:transparent;"
+                loading="lazy"
+              >Loading…</iframe>
             </div>
             <div class="order-green-trust">
               <span class="order-green-check">✓</span>
@@ -759,13 +763,17 @@
       <div class="popup-discount-label">Early Access</div>
       <h2 class="popup-title" id="popupTitle">Be First to Know</h2>
       <p class="popup-sub">The ED12 Lite is flying off shelves. Join the waitlist and get an exclusive restock discount.</p>
-      <form class="popup-form" id="popupForm" action="https://formspree.io/f/xpwzgkjq" method="POST">
-        <input type="email" name="email" class="popup-input" id="popupEmail" placeholder="Your email address" required autocomplete="email" />
-        <input type="hidden" name="source" value="ed12.de popup" />
-        <button type="submit" class="btn btn-primary popup-submit">Notify Me First 🔔</button>
-      </form>
-      <div class="popup-success" id="popupSuccess" hidden>
-        <p class="popup-success-msg">✓ You're on the list! We'll email you the moment we restock with an exclusive discount.</p>
+      <div class="popup-iframe-wrap">
+        <iframe
+          src="https://docs.google.com/forms/d/e/1FAIpQLScGGKN4mF8XfrtnUpD6KqZH8kUcKTcURlCUhvqHAAdF93fkpA/viewform?embedded=true"
+          width="100%"
+          height="200"
+          frameborder="0"
+          marginheight="0"
+          marginwidth="0"
+          style="border:none;background:transparent;"
+          loading="lazy"
+        >Loading…</iframe>
       </div>
       <p class="popup-privacy">No spam. Unsubscribe anytime.</p>
     </div>
