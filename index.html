@@ -743,11 +743,11 @@
 
   <footer class="footer">
     <div class="footer-inner">
-      <p data-i18n="footer.copy">© 2026 ED12 Lite Store. Product descriptions are based on manufacturer data and independent testing.</p>
+      <p data-i18n="footer.copy">© 2026 ED12 Lite Store — operated by Efendi Group L.L.C-FZ, Dubai, UAE.</p>
       <div class="footer-links">
-        <a href="#" data-i18n="footer.privacy">Privacy</a>
-        <a href="#" data-i18n="footer.imprint">Imprint</a>
-        <a href="#" data-i18n="footer.contact">Contact</a>
+        <a href="#privacy" onclick="showLegal('privacy')">Privacy Policy</a>
+        <a href="#imprint" onclick="showLegal('imprint')">Imprint</a>
+        <a href="mailto:info@efendi.group">Contact</a>
       </div>
     </div>
   </footer>
@@ -776,6 +776,63 @@
         >Loading…</iframe>
       </div>
       <p class="popup-privacy">No spam. Unsubscribe anytime.</p>
+    </div>
+  </div>
+
+  <!-- LEGAL MODAL -->
+  <div class="legal-overlay" id="legalModal" role="dialog" aria-modal="true" hidden>
+    <div class="legal-card">
+      <button class="legal-close" onclick="closeLegal()" aria-label="Close">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+      </button>
+
+      <!-- IMPRINT -->
+      <div id="legalImprint">
+        <h2>Imprint / Impressum</h2>
+        <p><strong>Angaben gemäß § 5 TMG</strong></p>
+        <p>
+          Efendi Group L.L.C-FZ<br>
+          Meydan Grandstand, 6th Floor<br>
+          Meydan Road, Nad Al Sheba<br>
+          Dubai, U.A.E.
+        </p>
+        <p>
+          <strong>Vertreten durch:</strong><br>
+          Furkan Engizek (Manager)
+        </p>
+        <p>
+          <strong>Kontakt:</strong><br>
+          E-Mail: <a href="mailto:info@efendi.group">info@efendi.group</a><br>
+          Telefon: <a href="tel:+971585723547">+971 58 572 3547</a>
+        </p>
+        <p>
+          <strong>Handelsregisternummer:</strong><br>
+          License No. 2526780.01 — Meydan Free Zone, Dubai, UAE
+        </p>
+        <p>
+          <strong>Hinweis:</strong><br>
+          Diese Website wird von einem Unternehmen mit Sitz in Dubai, UAE betrieben. Die Produkte werden über autorisierte Vertriebspartner geliefert.
+        </p>
+      </div>
+
+      <!-- PRIVACY -->
+      <div id="legalPrivacy">
+        <h2>Privacy Policy / Datenschutzerklärung</h2>
+        <p><strong>Verantwortlicher:</strong><br>
+          Efendi Group L.L.C-FZ, Meydan Grandstand, 6th Floor, Meydan Road, Nad Al Sheba, Dubai, UAE<br>
+          E-Mail: <a href="mailto:info@efendi.group">info@efendi.group</a>
+        </p>
+        <h3>1. Datenerhebung</h3>
+        <p>Wir erheben personenbezogene Daten (E-Mail-Adresse) ausschließlich dann, wenn Sie sich freiwillig über unser Waitlist-Formular eintragen. Diese Daten werden verwendet, um Sie über die Produktverfügbarkeit und exklusive Angebote zu informieren.</p>
+        <h3>2. Google Forms &amp; Google Sheets</h3>
+        <p>Unser Formular wird über Google Forms betrieben. Die eingegebenen Daten werden auf Servern von Google LLC gespeichert. Weitere Informationen finden Sie in der <a href="https://policies.google.com/privacy" target="_blank">Datenschutzerklärung von Google</a>.</p>
+        <h3>3. Cookies</h3>
+        <p>Diese Website verwendet technisch notwendige Cookies für die Spracheinstellung und das Theme. Es werden keine Tracking- oder Werbe-Cookies eingesetzt.</p>
+        <h3>4. Ihre Rechte (DSGVO)</h3>
+        <p>Sie haben das Recht auf Auskunft, Berichtigung, Löschung und Einschränkung der Verarbeitung Ihrer personenbezogenen Daten. Anfragen richten Sie bitte an: <a href="mailto:info@efendi.group">info@efendi.group</a></p>
+        <h3>5. Widerruf</h3>
+        <p>Sie können Ihre Einwilligung zur Speicherung Ihrer E-Mail-Adresse jederzeit durch eine E-Mail an <a href="mailto:info@efendi.group">info@efendi.group</a> widerrufen.</p>
+      </div>
     </div>
   </div>
 

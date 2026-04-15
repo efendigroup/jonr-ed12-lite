@@ -987,3 +987,31 @@ document.querySelectorAll('a[href^="#"]').forEach(a => {
     });
   }
 })();
+
+/* =============================================
+   LEGAL MODAL
+   ============================================= */
+function showLegal(type) {
+  event.preventDefault();
+  var modal = document.getElementById('legalModal');
+  var imprint = document.getElementById('legalImprint');
+  var privacy = document.getElementById('legalPrivacy');
+  if (type === 'imprint') {
+    imprint.style.display = 'block';
+    privacy.style.display = 'none';
+  } else {
+    imprint.style.display = 'none';
+    privacy.style.display = 'block';
+  }
+  modal.hidden = false;
+  document.body.style.overflow = 'hidden';
+}
+
+function closeLegal() {
+  document.getElementById('legalModal').hidden = true;
+  document.body.style.overflow = '';
+}
+
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') closeLegal();
+});
